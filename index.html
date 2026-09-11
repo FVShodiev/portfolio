@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Портфолио | Шодиев Фаррух</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        html {
+            scroll-behavior: smooth;
+            scroll-padding-top: 50px;
+        }
+
+        .hero {
+            background:linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('img/hero-img.jpg') no-repeat center center;
+            color: #ffffff;
+            padding: 100px 20px;
+            text-align: center;
+            min-height: 40vh;
+            background-size: cover;
+            margin-top: 56px;
+        }
+
+        .hero h1 span {
+            color: #ffc107;
+        }
+
+        .card-img-top {
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .link-project {
+            background-color: #0d6efd;
+            color: white;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            border-radius: 0.25rem;
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+                box-shadow: 0 0 0 rgba(13, 110, 253, 0.7);
+            }
+
+            50% {
+                transform: scale(1.05);
+                box-shadow: 0 0 20px rgba(13, 110, 253, 0.7);
+            }
+
+            100% {
+                transform: scale(1);
+                box-shadow: 0 0 0 rgba(13, 110, 253, 0.7);
+            }
+        }
+
+        .badge {
+            margin-right: 5px;
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow">
+        <div class="container">
+            <img src="img/logo.svg" alt="Логотип" class="d-inline-block align-text-top me-2">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#about">О себе</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Навыки</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Проекты</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Контакты</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Привет, я <span>Шодиев Фаррух</span></h1>
+            <p class="fw-semibold">Веб-разработчик / Создаю современные и удобные сайты</p>
+            <a href="#projects" class="btn btn-primary link-project">Посмотреть работы</a>
+        </div>
+    </section>
+
+    <main class="container my-5">
+
+        <section id="about" class="py-5">
+            <h2>О себе</h2>
+            <hr class="w-25">
+            <p class="lead">Занимаюсь веб-разработкой, проектированием интерфейсов и созданием динамических приложений.
+                Люблю чистый код и качественный дизайн.</p>
+        </section>
+
+        <section id="skills" class="py-5">
+            <h2>Мои навыки</h2>
+            <hr class="w-25">
+            <div class="row g-3 fw-semibold">
+                <div class="col-6 col-md-4">
+                    <div class="p-3 border rounded text-center bg-light font-monospace">HTML5 / CSS3</div>
+                </div>
+                <div class="col-6 col-md-4">
+                    <div class="p-3 border rounded text-center bg-light font-monospace">JavaScript</div>
+                </div>
+                <div class="col-6 col-md-4">
+                    <div class="p-3 border rounded text-center bg-light font-monospace">Bootstrap 5</div>
+                </div>
+                <div class="col-6 col-md-4">
+                    <div class="p-3 border rounded text-center bg-light font-monospace">PHP / MySQL</div>
+                </div>
+                <div class="col-6 col-md-4">
+                    <div class="p-3 border rounded text-center bg-light font-monospace">GitHub</div>
+                </div>
+                <div class="col-6 col-md-4">
+                    <div class="p-3 border rounded text-center bg-light font-monospace">Spline</div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="py-5">
+            <h2>Мои проекты</h2>
+            <hr class="w-25">
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="card h-100 shadow-sm d-flex flex-column">
+                        <div class="card-body">
+                            <img src="img/Проект 1.png" class="card-img-top mb-3" alt="Динамический сайт">
+                            <h5 class="card-title">Динамический сайт</h5>
+                            <p class="card-text">Сайт с авторизацией, личным кабинетом и базой данных. Для просмотра
+                                PHP/MySQL перейдите к аккаунту <a href="https://github.com/fvshodiev" target="_blank"
+                                    class="text-decoration-none">GitHub</a></p>
+                            <span class="badge bg-primary">HTML/CSS</span>
+                            <span class="badge bg-warning text-dark">JS</span>
+                            <span class="badge bg-info text-dark">Bootstrap</span>
+                            <span class="badge bg-secondary">PHP</span>
+                            <span class="badge bg-success">MySQL</span>
+                            <span class="badge bg-dark">Spline</span>
+                            <div class="d-flex justify-content-end mt-auto">
+                                <a href="https://fvshodiev.github.io/project_1_museum_online/"
+                                    class="btn btn-primary link-project">Подробнее</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card h-100 shadow-sm d-flex flex-column">
+                        <div class="card-body">
+                            <img src="img/Проект 2.png" class="card-img-top mb-3" alt="Многостраничный сайт">
+                            <h5 class="card-title">Многостраничный сайт</h5>
+                            <p class="card-text">Адаптивный сайт для бизнеса.</p>
+                            <span class="badge bg-primary">HTML/CSS</span>
+                            <span class="badge bg-warning text-dark">JS</span>
+                            <span class="badge bg-info text-dark">Bootstrap</span>
+                            <div class="d-flex justify-content-end mt-auto">
+                                <a href="https://fvshodiev.github.io/project_2_car-service/"
+                                    class="btn btn-primary link-project">Подробнее</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card h-100 shadow-sm d-flex flex-column">
+                        <div class="card-body">
+                            <img src="img/Проект 3.png" class="card-img-top mb-3" alt="Landing Page">
+                            <h5 class="card-title">Лендинг</h5>
+                            <p class="card-text">Адаптивный одностраничный сайт для бизнеса.</p>
+                            <span class="badge bg-primary">HTML/CSS</span>
+                            <span class="badge bg-warning text-dark">JS</span>
+                            <span class="badge bg-info text-dark">Bootstrap</span>
+                            <div class="d-flex justify-content-end mt-auto">
+                                <a href="https://fvshodiev.github.io/project_3_Design-space/"
+                                    class="btn btn-primary link-project">Подробнее</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card h-100 shadow-sm d-flex flex-column">
+                        <div class="card-body">
+                            <img src="img/Проект 4.png" class="card-img-top mb-3" alt="Landing Page">
+                            <h5 class="card-title">Лендинг (обновляется)</h5>
+                            <p class="card-text">Адаптивный одностраничный сайт для бизнеса.</p>
+                            <span class="badge bg-primary">HTML/CSS</span>
+                            <span class="badge bg-warning text-dark">JS</span>
+                            <span class="badge bg-info text-dark">Bootstrap</span>
+                            <div class="d-flex justify-content-end mt-auto">
+                                <a href="https://fvshodiev.github.io/test_2/"
+                                    class="btn btn-primary link-project">Подробнее</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card h-100 shadow-sm d-flex flex-column">
+                        <div class="card-body">
+                            <img src="img/Проект 5.png" class="card-img-top mb-3" alt="Галерея">
+                            <h5 class="card-title">Галерея</h5>
+                            <p class="card-text">Галерея с возможностью фильтрации по категориям.</p>
+                            <span class="badge bg-primary">HTML/CSS</span>
+                            <span class="badge bg-warning text-dark">JS</span>
+                            <div class="d-flex justify-content-end mt-auto">
+                                <a href="#" class="btn btn-primary link-project">Подробнее</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="py-5">
+            <h2>Контакты</h2>
+            <hr class="w-25">
+            <p class="lead">Свяжитесь со мной для сотрудничества:</p>
+            <ul class="list-unstyled fs-5">
+                <li><strong>Email:</strong> shodievfarrukh18@gmail.com</li>
+            </ul>
+
+            <style>
+                .footer-link img {
+                    margin-right: 15px;
+                    transition: transform 0.3s ease;
+                }
+
+                .footer-link img:hover {
+                    transform: scale(1.1);
+                }
+            </style>
+            <div class="footer-link">
+                <a href="https://t.me/Shodiev_22"><img src="img/tg.png" alt="Telegram" width="50" height="50"></a>
+                <a href="https://github.com/FVShodiev"><img src="img/git.png" alt="GitHub" width="50" height="50"></a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-dark text-white text-center py-4">
+        <p class="m-0">&copy; 2026 Шодиев Фаррух. Все права защищены.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.min.js"></script>
+</body>
+
+</html>
